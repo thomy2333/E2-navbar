@@ -29,7 +29,7 @@
 }
 
 header{
-    background: rgb(162, 3, 143);
+    background: var(--secondary);
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -42,7 +42,7 @@ header{
 }
 
 .logo {
-    height: 40%;
+    height: 100%;
 }
 
 .navbar,
@@ -121,10 +121,6 @@ main {
     color: var(--text-gray);
 }
 
-.hero-info p>span {
-    font-weight: 800;
-}
-
 .hero-info a {
     color: var(--text-white);
     background-color: var(--primary);
@@ -132,12 +128,13 @@ main {
     padding: 8px 0;
     border-radius: 10px;
     font-size: 14px;
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .hero-card {
-    width: 300px;
-    background: var(--secondary);
+    width: 500px;    
     padding: 20px;
     border-radius: 15px;
     display: flex;
@@ -146,55 +143,14 @@ main {
     gap: 20px;
 }
 
-.hero-card-info {
+#discover {
+    padding: 70px 0;
+    max-width: 1200px;
+}
+
+.discover-info {
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     gap: 10px;
-}
-
-.hero-card-top {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    gap: 10px;
-}
-
-.hero-card-top h3 {
-    font-weight: 600;
-    font-size: 16px;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-}
-
-.hero-card-top span {
-    background-color: var(--primary);
-    text-align: center;
-    width: 50px;
-    padding: 3px 0;
-    font-size: 14px;
-    border-radius: 10px;
-}
-
-.hero-card-bottom {
-    display: flex;
-    justify-content: space-between;
-}
-
-.hero-card-creator {
-    display: flex;
-    align-items: center;
-    gap: 5px;
-}
-
-.hero-card-creator img {
-    width: 40px;
-    height: 40px;
-}
-
-.creator-info p:first-child,
-.hero-card-price p {
-    color: var(--text-gray);
-    font-size: 12px;
-    font-weight: 300px;
+    margin-bottom: 50px;
 }

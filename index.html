@@ -7,16 +7,48 @@
     <title>NavBar</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <nav>
-        <img src="/src/logo.png" alt="imagen logo">
-        <ul class="nav">
-            <li class="link"><a href="#">Home</a></li>
-            <li class="link"><a href="#">Pedidos</a></li>
-            <li class="link"><a href="#">Contacto</a></li>
-            <li class="link"><a href="#">Nosotros</a></li>
-        </ul>
-    </nav>
-    <div></div>
+    <header>
+        <img src="/assets/img/logo.png" alt="Imagen logo" class="logo">
+        <nav class="navbar">
+            <ul class="navbar-list">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Descubre</a></li>
+                <li><a href="#">Redes</a></li>
+                <li><a href="#">Sobre Nosotros</a></li>
+            </ul>
+            <img src="/assets/img/cart-icon.svg" alt="logo card" class="cart-icon">
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero">
+            <div class="hero-info">
+                <h1>Fundas Lumus</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore officiis aliquid fugiat aspernatur commodi, esse quae modi impedit eius, earum, magnam ipsum ex consequatur ab quibusdam nemo facere aperiam cumque.</p>
+                <a href="#">Comprar</a>
+            </div>
+            <div class="hero-card">
+                <img src="/assets/img/hero/hero-card.png" alt="img hero">
+                <div class="hero-card-info">
+                    <div class="hero-card-top">
+                        <h3>"GOAT"</h3>
+                        <span>23</span>
+                    </div>
+                    <div class="hero-card-bottom">
+                        <div class="hero-card-creator">
+                            <img src="/assets/img/hero/creator.png" alt="">
+                        </div>
+                        <div class="hero-card-price">
+                            <p>Value</p>
+                            <span>9 ETH</span>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 </body>
 </html>
